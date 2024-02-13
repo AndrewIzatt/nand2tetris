@@ -5,6 +5,6 @@
 		}
 	],
 	"settings": {
-		"editor.wordBasedSuggestions": false
+		"editor.wordBasedSuggestions": "off"
 	}
 }
