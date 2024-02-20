@@ -10,3 +10,9 @@
 // R0 >= 0, R1 >= 0, and R0*R1 < 32768.
 
 // Put your code here.
+// Enter Value of R0
+// Enter Value of R1
+// Counter as value of R0
+// Loop R0 times (if R0 == 0, stop)
+   // Value of R1 into R2
+   // Subtract 1 from R0
