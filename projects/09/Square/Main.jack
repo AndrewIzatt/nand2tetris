@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -13,3 +14,20 @@ class Main {
         return;
     }
 }
+=======
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/09/Square/Main.jack
+
+/** Initializes a new Square Dance game and starts running it. */
+class Main {
+    function void main() {
+        var SquareGame game;
+        let game = SquareGame.new();
+        do game.run();
+        do game.dispose();
+        return;
+    }
+}
+>>>>>>> 3184509b3b90df5843c2b3cccf43fee134882202

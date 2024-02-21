@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -9,3 +10,16 @@ echo "Make sure that 'No Animation' is selected. Then, select the keyboard, pres
 repeat {
   ticktock;
 }
+=======
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/04/fill/Fill.tst
+
+load Fill.asm;
+echo "Make sure that 'No Animation' is selected. Then, select the keyboard, press any key for some time, and inspect the screen.";
+
+repeat {
+  ticktock;
+}
+>>>>>>> 3184509b3b90df5843c2b3cccf43fee134882202

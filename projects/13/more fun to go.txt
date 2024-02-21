@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 See Chapter 13. It's your call!
 
 And, if you develop something cool, please let us know about it.
@@ -6,4 +7,14 @@ We hope that you enjoyed the course!
 
 -- Noam and Shimon
 
+=======
+See Chapter 13. It's your call!
+
+And, if you develop something cool, please let us know about it.
+
+We hope that you enjoyed the course!
+
+-- Noam and Shimon
+
+>>>>>>> 3184509b3b90df5843c2b3cccf43fee134882202
 www.nand2tetris.org

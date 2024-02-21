@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -16,3 +17,23 @@ CHIP Bit {
     PARTS:
     // Put your code here:
 }
+=======
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/03/a/Bit.hdl
+
+/**
+ * 1-bit register:
+ * If load[t] == 1 then out[t+1] = in[t]
+ *                 else out does not change (out[t+1] = out[t])
+ */
+
+CHIP Bit {
+    IN in, load;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+}
+>>>>>>> 3184509b3b90df5843c2b3cccf43fee134882202
