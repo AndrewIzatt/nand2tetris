@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -7,3 +8,14 @@
 push constant 7
 push constant 8
 add
+=======
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/07/StackArithmetic/SimpleAdd/SimpleAdd.vm
+
+// Pushes and adds two constants.
+push constant 7
+push constant 8
+add
+>>>>>>> 3184509b3b90df5843c2b3cccf43fee134882202
