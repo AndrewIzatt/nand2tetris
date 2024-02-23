@@ -10,39 +10,33 @@
 // R0 >= 0, R1 >= 0, and R0*R1 < 32768.
 
 // Put your code here.
-// i = 0
 // if (R1 - i == 0) go to end
-//Set R0 = 5
-// @5
+//Set R0 = 3
+// @3
 // D=A
 // @R0
 // M=D
-//Set R1 = 7
-// @7
+//Set R1 = 5 
+// @5
 // D=A
 // @R1
 // M=D
-// Set i = 0
 // Set R2 = 0; Zero out memory
 @R2
 M=0
 (LOOP)
-    @R1
-    D=M
-    @END
-    D;JLE
-    //Add value of R0 into R2
     @R0
+    M=M-1
+    D=M
+    @STOP
+    D;JLT
+    @R1
     D=M
     @R2
-    M=M+D
-    // Decrement R1
-    @R1
-    M=M-1
-    // If R1 == 0, go to end
+    M=D+M
     @LOOP
     0;JMP
-(END)
-    @END
+(STOP)
+    @STOP
     0;JMP
 
