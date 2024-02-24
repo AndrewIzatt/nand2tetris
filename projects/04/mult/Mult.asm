@@ -11,14 +11,14 @@
 
 // Put your code here.
 // Test - Set R0 = 0; Zero out memory
-@R0
-M=0
+// @R0
+// M=0
 // Test - Set R1 = 0; Zero out memory
-@R1
-M=0
+// @R1
+// M=0
 // Test - Set R2 = 0; Zero out memory
-@R2
-M=0
+// @R2
+// M=0
 // Test - Set Counter = 0; Zero out memory
 @count
 M=0
