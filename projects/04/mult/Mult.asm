@@ -22,15 +22,15 @@
 // Test - Set Counter = 0; Zero out memory
 @count
 M=0
-// Set Counter to value in R0
-@R0
-D=M
-@count
-M=D
 (LOOP)
+    // Increment counter By 1
     @count
-    M=M-1
+    M=M+1
+    // Evaluate count, if count - R0 < 0, then break
+    @R0
     D=M
+    @count
+    D=M-D
     @STOP
     D;JLT
     @R1
