@@ -10,17 +10,16 @@
 // R0 >= 0, R1 >= 0, and R0*R1 < 32768.
 
 // Put your code here.
-// if (R1 - i == 0) go to end
 //Set R0 = 3
-// @3
-// D=A
-// @R0
-// M=D
+@3
+D=A
+@R0
+M=D
 //Set R1 = 5 
-// @5
-// D=A
-// @R1
-// M=D
+@5
+D=A
+@R1
+M=D
 // Set R2 = 0; Zero out memory
 @R2
 M=0
