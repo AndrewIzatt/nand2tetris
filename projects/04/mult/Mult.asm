@@ -10,21 +10,25 @@
 // R0 >= 0, R1 >= 0, and R0*R1 < 32768.
 
 // Put your code here.
-//Set R0 = 3
-@3
-D=A
+// Test - Set R0 = 0; Zero out memory
 @R0
-M=D
-//Set R1 = 5 
-@5
-D=A
+M=0
+// Test - Set R1 = 0; Zero out memory
 @R1
-M=D
-// Set R2 = 0; Zero out memory
+M=0
+// Test - Set R2 = 0; Zero out memory
 @R2
 M=0
+// Test - Set Counter = 0; Zero out memory
+@count
+M=0
+// Set Counter to value in R0
+@R0
+D=M
+@count
+M=D
 (LOOP)
-    @R0
+    @count
     M=M-1
     D=M
     @STOP
