@@ -9,3 +9,23 @@
 // the screen should be cleared.
 
 //// Replace this comment with your code.
+@position
+M=0
+(INFINITE) // Infinite Loop
+// Check Value of Keyboard Input
+@KBD
+D=M
+@PRESSED1
+D;JGT
+// Scenarios
+// 1. A key is pressed
+    (PRESSED1) // Outermost Loop
+    // 2. A key is pressed and then released 
+        // Or 3. No key is pressed
+        // Is there any pixels filled in with black?
+        // Yes?
+            // Find Last Most Pixel and Clear it
+        // No?
+            // Go back to INFINITE Loop 
+@INFINITE
+0;JMP
