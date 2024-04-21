@@ -1,18 +1,19 @@
 import sys
 import fileinput
 
-class Parser:
+class Parser(self, input_file):
+    with open(input_file, 'r', encoding='utf-8') as f:
+        read_data = f.read()
+        print(read_data)
 
-    def hasMoreLines(input_file):
-        with open(input_file, 'r', encoding='utf-8') as f:
-            read_data = f.read()
-            print(read_data)
+    # def hasMoreLines(self, input_file):
+
 
     
 
 def main():
-    f = Parser()
-    f.hasMoreLines(sys.argv[1]) 
+    hack = Parser()
+    hack.hasMoreLines(sys.argv[1]) 
     
 
 if __name__ == "__main__":
