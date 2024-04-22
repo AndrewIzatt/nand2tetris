@@ -1,3 +1,5 @@
 This is a test.
-This is the second line.
-This is the third line.
+// New line that shouldn't print.
+This is the third line. // Ignore this part
+This is the fourth line.
+This is the fifth line.
