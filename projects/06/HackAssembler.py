@@ -7,27 +7,36 @@ class Parser:
     
     def hasMoreLines(self):
         for line in self.file:
-            if line[-1] == '\n':
+            # if line[-1] == '\n':
+                # return True
+            if line[-1] != '\n':
                 return True
         return False
     
-    def advance(self):
-        for line in self.file:
-            instruction, _, comment = line.partition('//')  # Split the line into instruction and comment parts
-            trimmed_instruction = instruction.strip()  # Remove leading and trailing whitespace from the instruction
-            if not trimmed_instruction:  # Check if the instruction part is empty after stripping whitespace
-                continue
-            return trimmed_instruction
+    # def advance(self):
+    #         instruction, _, comment = self.line.partition('//')  # Split the line into instruction and comment parts
+    #         trimmed_instruction = instruction.strip()  # Remove leading and trailing whitespace from the instruction
+    #         if trimmed_instruction:  # Check if the instruction part is empty after stripping whitespace
+    #             return trimmed_instruction
+# def main():
+#     hack = Parser(sys.argv[1])
+#     for instruction in hack.advance():
+#         print(instruction)
 
+# def main():
+#     hack = Parser(sys.argv[1])
+#     while hack.hasMoreLines():
+#         next_line = hack.advance()
+#         print(type(next_line))
+
+
+# Original main()
 def main():
     hack = Parser(sys.argv[1])
-    while True:
-        hack_boolean = hack.hasMoreLines()
-        print(hack_boolean)
-        if not hack_boolean:
-            break
+    while hack.hasMoreLines():
         next_line = hack.advance()
-        print(next_line)
+        if next_line:
+            print(next_line)
 
 if __name__ == "__main__":
     main()
