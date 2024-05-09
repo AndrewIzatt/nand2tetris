@@ -50,5 +50,5 @@ if __name__ == "__main__":
         if instruction is not None:
             instruction_type = hack.instructionType(instruction)
             if instruction_type[0] == "A" or instruction_type[0] == "L":
-                parsed_instruction = hack.symbol(instruction)
-                output.write(parsed_instruction + "\n")
+                parsed_instruction = hack.symbol(instruction) 
+                output.write(parsed_instruction + "\n") # Move out of "If" when finished
