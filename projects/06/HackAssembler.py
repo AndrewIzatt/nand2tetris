@@ -20,10 +20,26 @@ class Parser:
     def instructionType(self, input):
             if input[0] == "@":
                 return "A_INSTRUCTION\n"
-            elif input[0] == "T": # Just for testing, everything should be a C_Instruction
+            elif "=" in input or ";" in input: # Just for testing, everything should be a C_Instruction
                 return "C_INSTRUCTION\n"
-            else:
+            elif input[0] == "(":
                 return "L_INSTRUCTION\n" # Or an L Instruction
+            else:
+                 raise SyntaxError("Invalid Instruction")
+    
+    def symbol(self, symbolic_instruction):
+         # Skipping Labels for right now
+         print(f"The symbolic instruction: {symbolic_instruction}")
+         return symbolic_instruction[1:]
+    
+    def dest(self, dest_instruction):
+         pass
+    
+    def comp(self, comp_instruction):
+         pass
+         
+    def jump(self, jump_instruction):
+         pass
 
 if __name__ == "__main__":
     # Remember to redo this
@@ -32,5 +48,7 @@ if __name__ == "__main__":
     while hack.hasMoreLines():
         instruction = hack.advance()
         if instruction is not None:
-            instruction = hack.instructionType(instruction)
-            output.write(instruction)
+            instruction_type = hack.instructionType(instruction)
+            if instruction_type[0] == "A" or instruction_type[0] == "L":
+                parsed_instruction = hack.symbol(instruction)
+                output.write(parsed_instruction + "\n")
